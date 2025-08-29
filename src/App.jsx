@@ -17,7 +17,10 @@ export default function App() {
       <Helmet>
         <title>Akhil Kumar - Developer</title>
         <meta name="description" content="Akhil Kumar - Developer" />
-        <meta name="keywords" content="Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog" />
+        <meta
+          name="keywords"
+          content="Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog"
+        />
       </Helmet>
       {/* Navbar */}
       <Navbar />
@@ -55,7 +58,7 @@ export default function App() {
         </div>
         <div className=" relative flex p-4 md:p-4 w-28 mb-5">
           <a
-            href="https://twitter.com/mannupaaji"
+            href="https://x.com/AkhilKumar_39"
             target="__blank"
             className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5  relative bg-white h-20 w-20"
           >
@@ -133,7 +136,11 @@ export default function App() {
             while (index <= 3) {
               index += 1;
               return (
-                <ProjectCard key={index} link={project.link } project={project}/>
+                <ProjectCard
+                  key={index}
+                  link={project.link}
+                  project={project}
+                />
               );
             }
           })}

@@ -6,6 +6,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Navbar from "../../components/Navbar";
 import Contact from "../../components/Contact";
 import Footor from "../../components/Footor";
+import { Helmet } from "react-helmet";
 
 const ChatAppUsingSocketio = () => {
   const [copiedCode, setCopiedCode] = useState(false);
@@ -48,6 +49,16 @@ const ChatAppUsingSocketio = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 dark:bg-[#18181b] dark:text-gray-200">
+      <Helmet>
+        <title>Blog - Real-Time Chat App with MERN and Socket.IO</title>
+        <meta
+          name="description"
+          content="Building a real-time chat application is one of the best ways to learn
+          how WebSockets work. In this tutorial, we’ll build a chat app using
+          MERN (MongoDB, Express, React, Node.js) and Socket.IO."
+        />
+        <meta name="keywords" content=" Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog, real time chat app, socket io, mern, mongodb, express, react, node.js, how to build a chat app using mern and socket.io" />
+      </Helmet>
       <Navbar />
       <div className="max-w-4xl mx-auto p-6 mb-26">
         <MoveLeft

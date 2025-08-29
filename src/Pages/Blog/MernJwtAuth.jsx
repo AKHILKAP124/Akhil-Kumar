@@ -5,6 +5,7 @@ import { CheckCheck, Copy, MoveLeft } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import Footor from "../../components/Footor";
 import Contact from "../../components/Contact";
+import { Helmet } from "react-helmet";
 
 const MernJwtAuth = () => {
   const [copiedCode, setCopiedCode] = useState(null);
@@ -46,6 +47,18 @@ const MernJwtAuth = () => {
   );
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 dark:bg-[#18181b] dark:text-gray-200">
+      <Helmet>
+        <title>Blog - Mern Jwt Authentication</title>
+        <meta
+          name="description"
+          content="Learn how to implement secure JWT-based authentication in your MERN
+          stack applications with this step-by-step guide."
+        />
+        <meta
+          name="keywords"
+          content="Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog, how to add authentication in mern using jwt, how to add authentication in mern, how to add authentication in mern using jwt, jwt authentication, authentication in mern, authentication in mern using jwt, authentication in mern using jwt, jwt authentication in mern, jwt authentication in mern using jwt, jwt authentication in mern using jwt"
+        />
+      </Helmet>
       <Navbar />
       <div className="max-w-4xl mx-auto px-6 py-12">
         <MoveLeft

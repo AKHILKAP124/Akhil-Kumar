@@ -7,12 +7,18 @@ import { Link, useNavigate } from "react-router-dom";
 import Contact from "./components/Contact";
 import Footor from "./components/Footor";
 import { projects } from "./constants/index";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-white dark:bg-[#18181b] text-gray-900">
+      <Helmet>
+        <title>Akhil Kumar - Developer</title>
+        <meta name="description" content="Akhil Kumar - Developer" />
+        <meta name="keywords" content="Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog" />
+      </Helmet>
       {/* Navbar */}
       <Navbar />
 

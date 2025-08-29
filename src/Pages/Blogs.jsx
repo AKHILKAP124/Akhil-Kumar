@@ -4,12 +4,23 @@ import Footor from "../components/Footor";
 import Navbar from "../components/Navbar";
 import { Search } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Blogs = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-white dark:bg-[#18181b] text-gray-900">
+      <Helmet>
+        <title>Blogs -Akhil Kumar</title>
+        <meta
+          name="description"
+          content="I’ve been programming for almost 1.5 years now. Throughout this time,
+          I’ve worked with various technologies, and I’m here to share them with
+          you. Use the search below to filter by title."
+        />
+        <meta name="keywords" content=" Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog" />
+      </Helmet>
       <Navbar />
       <div className="max-w-2xl mx-auto py-12 px-6 lg:px-0 ">
         <h1 className="text-5xl font-bold dark:text-gray-200 mb-1">Blogs</h1>

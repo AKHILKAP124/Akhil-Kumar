@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import { Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import ComponentCard from "../components/ComponentCard";
+import { Helmet } from "react-helmet";
 
 const Components = () => {
   const components = [
@@ -117,6 +118,20 @@ const Components = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-[#18181b] text-gray-900">
+      <Helmet>
+        <title>Components - Akhil Kumar</title>
+        <meta
+          name="description"
+          content="A collection of reusable, customizable, and scalable UI elements. Each
+          component is built with React and TailwindCSS, making integration
+          seamless. Use them to speed up development while keeping your design
+          consistent."
+        />
+        <meta
+          name="keywords"
+          content="Akhil Kumar, Akhil Kapoor, Akhil portfolio, Components, react components, reusable components, Programming, Web Development, web developer portfolio, web developer blog"
+        />
+      </Helmet>
       <Navbar />
       <div className="max-w-2xl mx-auto py-12 px-6 lg:px-0 ">
         <h1 className="text-5xl font-bold dark:text-gray-200 mb-1">

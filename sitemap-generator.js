@@ -10,17 +10,17 @@ const links = [
   { url: "/", changefreq: "daily", priority: 1.0 },
   { url: "/projects", changefreq: "weekly", priority: 0.8 },
   { url: "/blogs", changefreq: "weekly", priority: 0.8 },
-  { url: "/components", changefreq: "weekly", priority: 0.7 },
-  { url: "/resources", changefreq: "weekly", priority: 0.7 },
+  { url: "/components", changefreq: "weekly", priority: 0.8 },
+  { url: "/resources", changefreq: "weekly", priority: 0.8 },
   {
     url: "/blog/mern-jwt-authentication",
     changefreq: "weekly",
-    priority: 0.6,
+    priority: 0.8,
   },
   {
     url: "/blog/real-time-chat-app-using-socket-io",
     changefreq: "weekly",
-    priority: 0.6,
+    priority: 0.8,
   },
 ];
 

@@ -26,6 +26,7 @@ const Footor = () => {
             <Link
               key={link.name}
               to={link.herf}
+              target='_blank'
               className="text-gray-600 dark:text-gray-200/60 hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer "
             >
               {link.name}
@@ -36,11 +37,11 @@ const Footor = () => {
       <div className="flex flex-col items-start mt-10 text-sm text-gray-600 dark:text-gray-200/60">
         <p className=" flex gap-1">
           Find me on{" "}
-          <a href="">
+          <a href="https://x.com/AkhilKumar_39" target='_blank'>
             <Twitter className="text-sky-600" />
           </a>{" "}
           and{" "}
-          <a href="">
+          <a href="https://www.linkedin.com/in/akhil-kumar39/" target='_blank'>
             <Linkedin className="text-sky-600" />
           </a>
         </p>

@@ -13,16 +13,19 @@ const Components = () => {
       title: "Accordion",
       description: "A simple Accordion Component",
       logo: "react.svg",
+      link: "/component/accordion",
     },
     {
       title: "Alert",
       description: "A simple Alert Component",
       logo: "react.svg",
+      link: "/component/alert",
     },
     {
       title: "Avatar",
       description: "A simple Avatar Component",
       logo: "react.svg",
+      link: "/component/avatar",
     },
     // {
     //   title: "Badge",
@@ -152,6 +155,7 @@ const Components = () => {
               title={component.title}
               description={component.description}
               logo={component.logo}
+              link={component.link}
             />
           ))}
         </div>

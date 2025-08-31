@@ -6,6 +6,9 @@ import Components from "../Pages/Components";
 import Resources from "../Pages/Resources";
 import MernJwtAuth from "../Pages/Blog/MernJwtAuth";
 import ChatAppUsingSocketio from "../Pages/Blog/ChatAppUsingSocketio";
+import Accordion from "../Pages/ComponentPage/Accordion";
+import AlertBlog from "../Pages/ComponentPage/Alert";
+import AvatarBlog from "../Pages/ComponentPage/Avatar";
 
 
 
@@ -38,6 +41,23 @@ export const routes = createBrowserRouter([
   {
     path: "/components",
     element: <Components />,
+  },
+  {
+    path: "/component",
+    children: [
+      {
+        path: "/component/accordion",
+        element: <Accordion />,
+      },
+      {
+        path: "/component/alert",
+        element: <AlertBlog />,
+      },
+      {
+        path: "/component/avatar",
+        element: <AvatarBlog />,
+      }
+    ],
   },
   {
     path: "/resources",

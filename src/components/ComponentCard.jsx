@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const ComponentCard = ({ title, description, logo, ...rest }) => {
+const ComponentCard = ({ title, description, logo, link, ...rest }) => {
   return (
-    <Link to={``}>
+    <Link to={link}>
       <motion.div
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.99 }}

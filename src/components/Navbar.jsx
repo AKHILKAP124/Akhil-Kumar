@@ -113,10 +113,13 @@ const Navbar = () => {
             <ul>
               <motion.div
                 variants={itemA}
-                onClick={() => window.open("/blogs")}
-                className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20  cursor-pointer mb-1 w-full "
+                className="w-full h-full py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20  cursor-pointer mb-1 "
               >
-                <motion.p variants={itemA}>Blogs</motion.p>
+                <motion.p variants={itemA} className="w-full h-full">
+                  <Link to="/blogs" className="w-full h-full px-41">
+                    Blogs
+                  </Link>
+                </motion.p>
               </motion.div>
               <motion.div
                 variants={itemA}
@@ -124,10 +127,13 @@ const Navbar = () => {
               ></motion.div>
               <motion.div
                 variants={itemA}
-                onClick={() => window.open("/components")}
-                className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-1"
+                className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-1 w-full h-full"
               >
-                <motion.p variants={itemA}>Components</motion.p>
+                <motion.p variants={itemA} className="w-full h-full">
+                  <Link to="/components" className="w-full h-full px-34">
+                    Components
+                  </Link>
+                </motion.p>
               </motion.div>
               <motion.div
                 variants={itemA}
@@ -135,10 +141,13 @@ const Navbar = () => {
               ></motion.div>
               <motion.div
                 variants={itemA}
-                onClick={() => window.open("/resources")}
-                className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-4"
+                className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-4 w-full h-full"
               >
-                <motion.p variants={itemA}>Resources</motion.p>
+                <motion.p variants={itemA} className="w-full h-full">
+                  <Link to="/blogs" className="w-full h-full px-36">
+                    Resources
+                  </Link>
+                </motion.p>
               </motion.div>
             </ul>
           </motion.div>

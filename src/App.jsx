@@ -12,6 +12,21 @@ import { Helmet } from "react-helmet";
 export default function App() {
   const navigate = useNavigate();
 
+  const defaultProjects = {
+    logo: "react.svg",
+    title: "Adding More Projects",
+    description: "Adding More Projects",
+    link: "#",
+    skills: [
+      "React JS",
+      "TailwindCSS",
+      "Socket.io",
+      "MongoDB",
+      "Node JS",
+      "Express JS",
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white dark:bg-[#18181b] text-gray-900">
       <Helmet>
@@ -144,6 +159,7 @@ export default function App() {
               );
             }
           })}
+          <ProjectCard project={defaultProjects} link={defaultProjects.link} />
         </div>
         {projects.length > 4 && (
           <div className="flex mt-6">

@@ -15,18 +15,5 @@ export const projects = [
       "Express JS",
     ],
   },
-  {
-    icon: "🚀",
-    title: "Rogue",
-    description: "A Blockchain Protocol for Decentralized Finance",
-    link: "https://rogueprotocol.com",
-    skills: [
-      "React JS",
-      "Tailwind CSS",
-      "Solidity",
-      "MongoDb",
-      "Node JS",
-      "Express JS",
-    ],
-  },
+  
 ];

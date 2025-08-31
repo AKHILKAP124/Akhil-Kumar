@@ -13,8 +13,8 @@ export const links = [
         herf: "/blogs"
     },
     {
-        name: "Snippets",
-        herf: "/snippets"
+        name: "Components",
+        herf: "/components"
     },
     {
         name: "Freelancing",
@@ -26,7 +26,7 @@ export const links = [
 export const socialLinks = [
   {
     name: "GitHub",
-    herf: "/",
+    herf: "https://github.com/AKHILKAP124",
   },
   {
     name: "Twitter",
@@ -34,10 +34,6 @@ export const socialLinks = [
   },
   {
     name: "Linkedin",
-    herf: "/blogs",
-  },
-  {
-    name: "Instagram",
-    herf: "/snippets",
+    herf: "https://www.linkedin.com/in/akhil-kumar39",
   },
 ];

@@ -13,7 +13,7 @@ const Footor = () => {
           {links.map((link) => (
             <Link
               key={link.name}
-              to={link.link}
+              to={link.herf}
               className="text-gray-600 dark:text-gray-200/60 hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer "
             >
               {link.name}
@@ -25,7 +25,7 @@ const Footor = () => {
           {socialLinks.map((link) => (
             <Link
               key={link.name}
-              to={link.link}
+              to={link.herf}
               className="text-gray-600 dark:text-gray-200/60 hover:text-gray-800 dark:hover:text-gray-200 cursor-pointer "
             >
               {link.name}

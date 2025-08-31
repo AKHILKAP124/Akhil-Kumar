@@ -111,35 +111,35 @@ const Navbar = () => {
             className="z-50 p-4 rounded-xl bg-white dark:bg-zinc-800 shadow-2xl absolute top-16 left-3  w-[calc(100vw-2rem)] min-h-40 text-base dark:text-gray-200 font-medium md:hidden"
           >
             <ul>
-              <motion.li
+              <motion.div
                 variants={itemA}
                 onClick={() => window.open("/blogs")}
                 className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20  cursor-pointer mb-1 w-full "
               >
                 <motion.p variants={itemA}>Blogs</motion.p>
-              </motion.li>
+              </motion.div>
               <motion.div
                 variants={itemA}
                 className=" w-full flex-none blur-[1px] h-px border-t border-slate-900/20 dark:border-gray-300  py-2"
               ></motion.div>
-              <motion.li
+              <motion.div
                 variants={itemA}
                 onClick={() => window.open("/components")}
                 className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-1"
               >
                 <motion.p variants={itemA}>Components</motion.p>
-              </motion.li>
+              </motion.div>
               <motion.div
                 variants={itemA}
                 className=" w-full flex-none blur-[1px] h-px border-t border-slate-900/20 dark:border-gray-300 py-2"
               ></motion.div>
-              <motion.li
+              <motion.div
                 variants={itemA}
                 onClick={() => window.open("/resources")}
                 className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-4"
               >
                 <motion.p variants={itemA}>Resources</motion.p>
-              </motion.li>
+              </motion.div>
             </ul>
           </motion.div>
         )}

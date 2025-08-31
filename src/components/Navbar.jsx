@@ -1,6 +1,6 @@
 import React from "react";
 import { Moon, Sun } from "lucide-react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AlignJustify } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,6 +16,8 @@ const Navbar = () => {
   const [theme, setTheme] = React.useState("light");
   const [isHamburgerOpen, setIsHamburgerOpen] = React.useState(false);
   const storedTheme = localStorage.getItem("theme");
+
+  const navigate = useNavigate();
 
   const variants = {
     hidden: { opacity: 0, y: "1vh" },
@@ -113,12 +115,14 @@ const Navbar = () => {
             <ul>
               <motion.div
                 variants={itemA}
+                onClick={() => {
+                  setIsHamburgerOpen(false);
+                  navigate("/blogs");
+                }}
                 className="w-full h-full py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20  cursor-pointer mb-1 "
               >
                 <motion.p variants={itemA} className="w-full h-full">
-                  <Link to="/blogs" className="w-full h-full px-41">
-                    Blogs
-                  </Link>
+                  Blogs
                 </motion.p>
               </motion.div>
               <motion.div
@@ -127,12 +131,14 @@ const Navbar = () => {
               ></motion.div>
               <motion.div
                 variants={itemA}
+                onClick={() => {
+                  setIsHamburgerOpen(false);
+                  navigate("/components");
+                }}
                 className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-1 w-full h-full"
               >
                 <motion.p variants={itemA} className="w-full h-full">
-                  <Link to="/components" className="w-full h-full px-34">
-                    Components
-                  </Link>
+                  Components
                 </motion.p>
               </motion.div>
               <motion.div
@@ -141,12 +147,14 @@ const Navbar = () => {
               ></motion.div>
               <motion.div
                 variants={itemA}
+                onClick={() => {
+                  setIsHamburgerOpen(false);
+                  navigate("/resources");
+                }}
                 className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-4 w-full h-full"
               >
                 <motion.p variants={itemA} className="w-full h-full">
-                  <Link to="/blogs" className="w-full h-full px-36">
-                    Resources
-                  </Link>
+                  Resources
                 </motion.p>
               </motion.div>
             </ul>

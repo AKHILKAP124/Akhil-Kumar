@@ -15,5 +15,16 @@ export const projects = [
       "Express JS",
     ],
   },
-  
+  {
+    logo: "mountain.svg",
+    title: "Himalayan Tours",
+    description: "Himalayan Tours - Tour and Travel Website",
+    link: "https://himalayan-hues-tours.vercel.app/",
+    skills: [
+      "React JS",
+      "TailwindCSS",
+      "TypeScript",
+      "lucide-react",
+    ],
+  },
 ];

@@ -9,7 +9,6 @@ const NavbarLinks = [
   { name: "Projects", href: "/projects" },
   { name: "Blogs", href: "/blogs" },
   { name: "Components", href: "/components" },
-  { name: "Resources", href: "/resources" },
 ];
 
 const Navbar = () => {
@@ -101,6 +100,17 @@ const Navbar = () => {
             {link.name}
           </NavLink>
         ))}
+        <NavLink
+          to={"https://freelance-akhilkumar.vercel.app/"}
+          target="_blank"
+          className={({ isActive }) =>
+            isActive
+              ? " text-sky-600 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600"
+              : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+          }
+        >
+          Freelancing
+        </NavLink>
       </nav>
 
       <AnimatePresence>
@@ -149,12 +159,12 @@ const Navbar = () => {
                 variants={itemA}
                 onClick={() => {
                   setIsHamburgerOpen(false);
-                  navigate("/resources");
+                  window.open("https://freelance-akhilkumar.vercel.app/");
                 }}
                 className="py-1.5 px-2.5 rounded-lg hover:bg-sky-600/10 dark:hover:bg-sky-600/20 cursor-pointer mb-4 w-full h-full"
               >
                 <motion.p variants={itemA} className="w-full h-full">
-                  Resources
+                  Freelancing
                 </motion.p>
               </motion.div>
             </ul>

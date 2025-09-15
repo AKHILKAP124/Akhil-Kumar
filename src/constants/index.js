@@ -19,7 +19,7 @@ export const projects = [
     logo: "mountain.svg",
     title: "Himalayan Tours",
     description: "Himalayan Tours - Tour and Travel Website",
-    link: "https://himalayan-hues-tours.vercel.app/",
+    link: "https://himalayantours.vercel.app/",
     skills: [
       "React JS",
       "TailwindCSS",

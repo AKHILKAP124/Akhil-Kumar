@@ -13,6 +13,8 @@ export const projects = [
       "MongoDB",
       "Node JS",
       "Express JS",
+      "JWT",
+      "Redux",
     ],
   },
   {
@@ -20,11 +22,14 @@ export const projects = [
     title: "Himalayan Tours",
     description: "Himalayan Tours - Tour and Travel Website",
     link: "https://himalayantours.vercel.app/",
-    skills: [
-      "React JS",
-      "TailwindCSS",
-      "TypeScript",
-      "lucide-react",
-    ],
+    skills: ["React JS", "TailwindCSS", "TypeScript", "lucide-react"],
+  },
+  {
+    logo: "taxi.svg",
+    title: "Groove Taxi Services",
+    description: `Premium Taxi Service in
+Dharamshala & Himachal`,
+    link: "https://groovetaxiservice.vercel.app/",
+    skills: ["React JS", "TailwindCSS", "TypeScript", "lucide-react"],
   },
 ];

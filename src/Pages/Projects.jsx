@@ -1,13 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footor from '../components/Footor'
-import ProjectCard from '../components/ProjectCard';
-import Contact from '../components/Contact';
-import { projects } from '../constants/index';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footor from "../components/Footor";
+import ProjectCard from "../components/ProjectCard";
+import Contact from "../components/Contact";
+import { projects } from "../constants/index";
+import { Helmet } from "react-helmet";
 
 const Projects = () => {
-
   const defaultProjects = {
     logo: "react.svg",
     title: "Adding More Projects",
@@ -21,7 +20,7 @@ const Projects = () => {
       "Node JS",
       "Express JS",
     ],
-  }
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-[#18181b] text-gray-900">
@@ -33,7 +32,10 @@ const Projects = () => {
           I’ve worked with various technologies, and I’m here to share them with
           you. Use the search below to filter by title."
         />
-        <meta name="keywords" content=" Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog, web developer projects, react projects, full stack projects" />
+        <meta
+          name="keywords"
+          content=" Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog, web developer projects, react projects, full stack projects"
+        />
       </Helmet>
       <Navbar />
       <div className="max-w-2xl mx-auto py-12 px-6 lg:px-0 ">
@@ -58,19 +60,17 @@ const Projects = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 dark:text-gray-200">
-            {projects.map((project, index) => {
-              while (index <= 3) {
-                index += 1;
-                return (
-                  <ProjectCard
-                    key={index}
-                    link={project.link}
-                    project={project}
-                  />
-                );
-              }
-            })}
-            <ProjectCard project={defaultProjects} link={defaultProjects.link} />
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.title}
+                link={project.link}
+                project={project}
+              />
+            ))}
+            <ProjectCard
+              project={defaultProjects}
+              link={defaultProjects.link}
+            />
           </div>
         </div>
 
@@ -84,6 +84,6 @@ const Projects = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;

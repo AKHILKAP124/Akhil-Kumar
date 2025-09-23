@@ -25,11 +25,25 @@ export const projects = [
     skills: ["React JS", "TailwindCSS", "TypeScript", "lucide-react"],
   },
   {
+    logo: "shopping-bags.svg",
+    title: "QKart",
+    description: "Modern Store - Premium Shopping Experience",
+    link: "https://qkartl.vercel.app/",
+    skills: ["React JS", "TailwindCSS", "TypeScript", "lucide-react"],
+  },
+  {
     logo: "taxi.svg",
     title: "Groove Taxi Services",
     description: `Premium Taxi Service in
 Dharamshala & Himachal`,
     link: "https://groovetaxiservice.vercel.app/",
+    skills: ["React JS", "TailwindCSS", "TypeScript", "lucide-react"],
+  },
+  {
+    logo: "bug-play.svg",
+    title: "WorkWithAkhil",
+    description: `WorkWithAkhil - Professional Web Development Services`,
+    link: "https://freelance-akhilkumar.vercel.app/",
     skills: ["React JS", "TailwindCSS", "TypeScript", "lucide-react"],
   },
 ];

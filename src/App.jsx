@@ -49,11 +49,11 @@ export default function App() {
           <p className="text-[15px] dark:text-[#949498] mb-4">
             Building{" "}
             <span className="bg-gray-200 dark:bg-gray-200/20 dark:text-gray-200 font-medium rounded px-2 py-0.5">
-              Aceternity
+              Infraa
             </span>
             ,{" "}
             <span className="bg-gray-200 dark:bg-gray-200/20 dark:text-gray-200 font-medium rounded px-2 py-0.5">
-              Rogue
+              QKart
             </span>{" "}
             and other{" "}
             <span className="font-medium dark:text-gray-200">cool things</span>
@@ -148,7 +148,7 @@ export default function App() {
         <h2 className="text-3xl font-bold mb-6">Projects</h2>
         <div className="max-w-2xl mx-auto grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => {
-            while (index <= 3) {
+            while (index <= 4) {
               index += 1;
               return (
                 <ProjectCard

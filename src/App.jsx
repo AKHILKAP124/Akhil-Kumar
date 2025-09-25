@@ -78,7 +78,7 @@ export default function App() {
             className="block z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5  relative bg-white h-20 w-20"
           >
             <img
-              src="https://i.ibb.co/vvvNf99Q/IMG-20250702-174551-777.jpg"
+              src="https://i.ibb.co/6ct1ChNF/Whats-App-Image-2025-09-25-at-7-07-55-PM.jpg"
               alt="Akhil Kumar"
               className="size-20 rounded object-cover shadow-lg "
             />

@@ -14,7 +14,7 @@ const NavbarLinks = [
 const Navbar = () => {
   const [theme, setTheme] = React.useState("light");
   const [isHamburgerOpen, setIsHamburgerOpen] = React.useState(false);
-  const storedTheme = localStorage.getItem("theme");
+  const storedTheme = localStorage.getItem("ak-th");
 
   const navigate = useNavigate();
 
@@ -49,11 +49,11 @@ const Navbar = () => {
   const toggleTheme = () => {
     if (theme === "dark") {
       setTheme("light");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("ak-th", "light");
       document.documentElement.classList.remove("dark");
     } else {
       setTheme("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("ak-th", "dark");
       document.documentElement.classList.add("dark");
     }
   };

@@ -10,6 +10,8 @@ import { Helmet } from "react-helmet";
 const MernJwtAuth = () => {
   const [copiedCode, setCopiedCode] = useState(null);
 
+  const slug = window.location.pathname.split("/").pop();
+
   const handleCopy = (code, index) => {
     navigator.clipboard.writeText(code);
     setCopiedCode(index);

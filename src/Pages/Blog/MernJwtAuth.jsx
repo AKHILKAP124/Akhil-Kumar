@@ -10,8 +10,6 @@ import { Helmet } from "react-helmet";
 const MernJwtAuth = () => {
   const [copiedCode, setCopiedCode] = useState(null);
 
-  const slug = window.location.pathname.split("/").pop();
-
   const handleCopy = (code, index) => {
     navigator.clipboard.writeText(code);
     setCopiedCode(index);
@@ -59,6 +57,10 @@ const MernJwtAuth = () => {
         <meta
           name="keywords"
           content="Akhil Kumar, Akhil Kapoor, Akhil portfolio, Blogs, Programming, Web Development, web developer portfolio, web developer blog, how to add authentication in mern using jwt, how to add authentication in mern, how to add authentication in mern using jwt, jwt authentication, authentication in mern, authentication in mern using jwt, authentication in mern using jwt, jwt authentication in mern, jwt authentication in mern using jwt, jwt authentication in mern using jwt"
+        />
+        <link
+          rel="canonical"
+          href="https://akhilkumar.online/blog/mern-jwt-authentication"
         />
       </Helmet>
       <Navbar />
